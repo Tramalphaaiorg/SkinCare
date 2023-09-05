@@ -1,0 +1,19 @@
+:root{
+    ---pink: rgb(255, 224, 46);
+}
+.css-blurry-gradient {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    width: 45vmin;
+    height: 45vmin;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+}
+
+.blue {
+    background: radial-gradient(circle at 50% 50%, rgba(58, 54, 253, 1), rgba(58, 54, 253, 0));
+}
+
+.yellow {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 224, 46, 1), rgba(255, 224, 46, 0));
+}
