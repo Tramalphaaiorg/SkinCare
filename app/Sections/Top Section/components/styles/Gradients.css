@@ -15,5 +15,5 @@
 }
 
 .yellow {
-    background: radial-gradient(circle at 50% 50%, rgba(255, 224, 46, 1), rgba(255, 224, 46, 0));
+    background: radial-gradient(circle at 50% 50%, rgb(255, 224, 46), rgba(255, 224, 46, 0));
 }
