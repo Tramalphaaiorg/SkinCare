@@ -17,6 +17,7 @@ module.exports = {
         themeYellow: "#FFDE2E",
         themeGreen: "#32C76D",
         themeColorDark: "#0F0E44",
+        themeColorSemiDark: "rgb(15,14,68)",
         themeRed: "#F35353",
       }
     },

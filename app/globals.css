@@ -33,3 +33,46 @@ body {
 * ::-webkit-scrollbar{
   display: none;
 }
+
+.maskE {
+  mask-image: url(https://ablexerb.sirv.com/Images/mask-bend.png);
+  mask-mode: alpha;
+  mask-size: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 740px) {
+  .maskE {
+    mask-image: url(https://ablexerb.sirv.com/Images/mask.png);
+    mask-size: 20rem;
+    width: auto;
+  }
+  
+}
+
+.ptn::after {
+  content: "";
+  height: 50rem;
+  position: absolute;
+  width: 50rem;
+  top: 0rem;
+  left: 0rem;
+  opacity: .5;
+  pointer-events: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.ptn::before {
+  content: "";
+  height: 50rem;
+  width: 50rem;
+  border: 1px solid #fff;
+  opacity: .5;
+  pointer-events: none;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}

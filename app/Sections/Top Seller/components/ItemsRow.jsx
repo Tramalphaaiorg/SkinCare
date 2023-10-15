@@ -3,16 +3,16 @@ import React, { useEffect, useRef, useState } from 'react';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 import { Splide, SplideSlide} from '@splidejs/react-splide';
-import ReviewCard from './ReviewCard';
+import ProductCard from './ProductCard';
 
 
-export const Reviews = () => {
+export const ItemsRow = () => {
     const [options, setOptions] = useState({
         type: 'loop',
-        gap: '',
-        interval: 3000,
-        // drag: "free",
-        perPage: 2,
+        focus: 3,
+        gap: '1rem',
+        interval: 1000,
+        perPage: 2.5,
         omitEnd: false,
         rewind: true,
         autoplay: true,
@@ -38,9 +38,9 @@ export const Reviews = () => {
 
     useEffect(() => {
         if (isMobileView) {
-        setOptions((preOption)=>({perPage: 1, focus: "center", gap: "2rem"}))
+        setOptions((preOption)=>({perPage: 1, focus: "center"}))
         }else{
-            setOptions((preOption)=>({perPage: 2, focus: 0, gap: ""}))
+            setOptions((preOption)=>({perPage: 2.5, focus: 3, gap: ""}))
         }
     }, [isMobileView]);
 
@@ -48,26 +48,44 @@ export const Reviews = () => {
         <Splide
             options={options}
             aria-labelledby="autoplay-example-heading"
-            className='splide overflow-x-auto sm:flex-1 min-w-[20rem] w-[20rem] sm:justify-normal justify-center mx-auto'
+            className='splide overflow-x-auto sm:flex-1 min-w-[20rem] w-[20rem] flex sm:justify-normal justify-center mx-auto'
             hasTrack={true}
         >
             <SplideSlide>
-                <ReviewCard val={0} />
+                <ProductCard ord={0} />
             </SplideSlide>
             <SplideSlide>
-                <ReviewCard val={1} />
+                <ProductCard ord={1} />
             </SplideSlide>
             <SplideSlide>
-                <ReviewCard val={2} />
+                <ProductCard ord={2} />
             </SplideSlide>
             <SplideSlide>
-                <ReviewCard val={3} />
+                <ProductCard ord={3} />
             </SplideSlide>
             <SplideSlide>
-                <ReviewCard val={4} />
+                <ProductCard ord={4} />
             </SplideSlide>
             <SplideSlide>
-                <ReviewCard  val={5}/>
+                <ProductCard  ord={5}/>
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard ord={0} />
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard ord={1} />
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard ord={2} />
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard ord={3} />
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard ord={4} />
+            </SplideSlide>
+            <SplideSlide>
+                <ProductCard  ord={5}/>
             </SplideSlide>
         </Splide>
     );

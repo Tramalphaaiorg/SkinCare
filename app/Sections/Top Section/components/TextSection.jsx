@@ -2,7 +2,7 @@ import { FaArrowRight, FaAndroid } from "react-icons/fa6"
 export default function TextSection() {
     return (
         <div className="pt-24 pb-16 flex flex-col gap-6">
-            <span className="sm:text-[5vmin] text-[9vmin] leading-[8vmin] max-w-[calc(100%-1rem)] sm:leading-[8vmin] font-bold md:text-left text-center">
+            <span className="sm:text-[5vmin] text-[9vmin] leading-[8vmin] max-w-[calc(100%-1.5rem)] sm:leading-[6vmin] font-bold md:text-left text-center">
                 Unlock radiant skin with Alpha AI. Your personalizes solution for skin health.
             </span>
             <span className="opacity-70 md:text-left text-center max-w-[calc(100%-1rem)] sm:text-base text-sm">
