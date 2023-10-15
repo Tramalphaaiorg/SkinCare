@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { FaArrowRight, FaAndroid } from "react-icons/fa6"
 export default function TextSection() {
     return (
@@ -13,9 +14,12 @@ export default function TextSection() {
                 <div className="rounded-xl bg-themeColor text-white cursor-pointer active:scale-90 px-8 py-4 hover:scale-110 flex gap-3 items-center group">
                     Get recommended <FaArrowRight className="text-white group-hover:scale-125" />
                 </div>
-                <div className="rounded-xl border-2 border-transparent hover:border-themeColor cursor-pointer active:scale-90 px-8 py-4 hover:scale-110 flex gap-3 items-center group">
+                <Link href="/skin-analysis" className="rounded-xl border-2 border-transparent hover:border-themeColor cursor-pointer active:scale-90 px-8 py-4 hover:scale-110 flex gap-3 items-center group">
                     Analyze skin <FaAndroid className="text-themeColor group-hover:scale-125" />
-                </div>
+                </Link>
+                {/* <div className="rounded-xl border-2 border-transparent hover:border-themeColor cursor-pointer active:scale-90 px-8 py-4 hover:scale-110 flex gap-3 items-center group">
+                    Analyze skin <FaAndroid className="text-themeColor group-hover:scale-125" />
+                </div> */}
             </div>
         </div>
     );

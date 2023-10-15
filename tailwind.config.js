@@ -19,6 +19,12 @@ module.exports = {
         themeColorDark: "#0F0E44",
         themeColorSemiDark: "rgb(15,14,68)",
         themeRed: "#F35353",
+        themeblue: "#393FCF",
+        themeLBlue: "#CDD8FF",
+        themedpurple: "#626381",
+        themegrey: "#D9D9D9",
+        themeGrey2: "#F7F7F7",
+        themeGrey3: "#9D9EA2",
       }
     },
   },

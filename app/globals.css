@@ -76,3 +76,25 @@ body {
   left: 0;
   position: absolute;
 }
+.test1::before {
+  content: url('/icons/check.svg');
+
+  position: absolute;
+  left: -4px; top: -30px;
+}
+
+/* .scrollh-btn:hover  */
+.scrollh-btn::before{
+  content: url('/icons/Right.svg');
+
+  position: absolute;
+  right: 135px; bottom: -310px;
+}
+
+/* dev */
+.border-it{
+  border: 2px solid red
+}
+.outline-it{
+  outline: 2px solid red
+}
