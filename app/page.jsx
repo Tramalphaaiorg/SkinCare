@@ -1,3 +1,4 @@
+import Footer from "./Sections/Footer/Footer";
 import Banner from "./Sections/ImageBanner/Banner";
 import InfoSection from "./Sections/Info Section/InfoSection";
 import ReviewsSections from "./Sections/Reviews/ReviewsSections";
@@ -20,6 +21,7 @@ export default function page() {
             <InfoSection03 />
             <TopSeller />
             <Carousel />
+            <Footer />
         </main>
     );
 }                           
