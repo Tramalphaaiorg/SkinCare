@@ -1,6 +1,6 @@
 export default function Top() {
     return (
-        <section className="p-9 bg-themeColor w-fit relative -bottom-[7rem] rounded-2xl">
+        <section className="p-9 bg-themeColor w-fit relative -bottom-[7rem] rounded-2xl text-white">
             <div className="md:text-[2.75rem] text-2xl uppercase md:leading-[2.75rem] font-bold md:max-w-lg max-w-sm whitespace-normal">Subscribe to get our news letter and stay on the know</div>
             <div className="mt-6 flex gap-4">
                 <input 

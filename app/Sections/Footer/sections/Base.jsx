@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Base() {
     return (
-        <section className="bg-[rgb(28,25,25)] sm:px-16 px-6 gap-10 grid p-8 pt-48 w-full">
+        <section className="bg-[rgb(28,25,25)] text-white sm:px-16 px-6 gap-10 grid p-8 pt-48 w-full">
             <section className="flex flex-wrap gap-[2rem_1rem] items-center w-full text-lg">
                 <div className="grid gap-3 min-w-fit flex-1">
                     <Link href={"#"}>Alpha AI</Link>

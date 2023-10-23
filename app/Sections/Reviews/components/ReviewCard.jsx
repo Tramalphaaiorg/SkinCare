@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa6";
 
 export default function ReviewCard({val}) {
     return (
-        <div className="sm:w-[23rem] max-w-[20rem] w-[20rem] md:ml-40 bg-white rounded-2xl h-[28rem] p-9 flex flex-col text-black relative overflow-hidden">
+        <div className="sm:w-[23rem] max-w-[20rem] w-[20rem] md:ml-40 bg-white rounded-2xl h-[28rem] p-9 flex flex-col dark:border-none border border-themeColor/20 text-black relative overflow-hidden">
             <span className="absolute -right-5 -top-16 text-[15rem] font-black opacity-5">
                 02
             </span>
