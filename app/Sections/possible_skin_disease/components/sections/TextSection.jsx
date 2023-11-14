@@ -19,7 +19,7 @@ export default function TextSection() {
 
             <div className="text-themeColor flex items-center border border-themeColor rounded-[2rem] w-[15rem]  cursor-pointer group">
                 <span className="px-8 py-4 flex-1 text-center">view more</span>
-                <div className="p-4 border rounded-full border-themeColor h-full aspect-square group-hover:-mr-2 bg-white/50 dark:bg-black/50 group-active:mr-1 group-active:rotate-45 grid place-items-center backdrop-blur">
+                <div className="p-4 border rounded-full border-themeColor h-full aspect-square group-hover:-mr-2 group-hover:bg-themeColor group-hover:text-white bg-white/50 dark:bg-black/50 group-active:mr-[0.025rem] group-active:rotate-45 grid place-items-center backdrop-blur group-active:bg-themeColor/50">
                     <FaArrowRight />
                 </div>
             </div>

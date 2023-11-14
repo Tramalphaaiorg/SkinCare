@@ -1,3 +1,4 @@
+import { PopUp } from "./PopUp Screen/PopUp";
 import Footer from "./Sections/Footer/Footer";
 import Banner from "./Sections/ImageBanner/Banner";
 import InfoSection from "./Sections/Info Section/InfoSection";
@@ -11,7 +12,7 @@ import Carousel from "./Sections/possible_skin_disease/Carousel";
 
 export default function page() {
     return (
-        <main className="w-screen h-screen dark:text-white font-medium">
+        <main className="w-screen h-screen dark:text-white font-medium relative">
             <TopSection />
             {/* <Banner /> */}
             <InfoSection />
@@ -22,6 +23,7 @@ export default function page() {
             <TopSeller />
             <Carousel />
             <Footer />
+            <PopUp />
         </main>
     );
 }                           

@@ -9,7 +9,7 @@ export default function page() {
     <>
       <Header />
 
-      <section className="flex items-center justify-center bg-white w-3/4x mx-autox pt-10 mb-10">
+      <section className="flex items-center justify-center bg-white w-3/4x mx-autox pt-10 mb-10 text-themeColorDark">
         <div>
           <h1 className="text-5xl font-bold w-[17ch] mb-2">Use Alpha AI now to get recommended skin care routie</h1>
           <p className="w-[58ch] mb-8">

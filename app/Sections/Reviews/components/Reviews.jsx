@@ -12,7 +12,7 @@ export const Reviews = () => {
         gap: '',
         interval: 3000,
         // drag: "free",
-        perPage: 2.5,
+        perPage: 2,
         omitEnd: false,
         rewind: true,
         autoplay: true,
@@ -40,7 +40,7 @@ export const Reviews = () => {
         if (isMobileView) {
         setOptions((preOption)=>({perPage: 1, focus: "center", gap: "2rem"}))
         }else{
-            setOptions((preOption)=>({perPage: 2.5, focus: 0, gap: ""}))
+            setOptions((preOption)=>({perPage: 2, focus: 0, gap: ""}))
         }
     }, [isMobileView]);
 
