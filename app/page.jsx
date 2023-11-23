@@ -23,7 +23,7 @@ export default function page() {
             <TopSeller />
             <Carousel />
             <Footer />
-            <PopUp />
+            {/* <PopUp /> */}
         </main>
     );
 }                           
