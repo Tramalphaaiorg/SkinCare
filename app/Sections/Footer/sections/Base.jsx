@@ -3,30 +3,27 @@ import Link from "next/link";
 export default function Base() {
     return (
         <section className="bg-[rgb(28,25,25)] text-white sm:px-16 px-6 gap-10 grid p-8 pt-48 w-full">
-            <section className="flex flex-wrap gap-[2rem_1rem] items-center w-full text-lg">
+            <section className="flex flex-wrap gap-[2rem_1rem] items-center w-full sm:text-lg">
                 <div className="grid gap-3 min-w-fit flex-1">
-                    <Link href={"#"}>Alpha AI</Link>
-                    <Link href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
-                    <Link href={"tel:234000090909"}>(+234) 000-090-0909</Link>
-                    <Link href={"#"}>Rivers State, Port Harcourt</Link>
+                    <Link href={"#"} className="sm:text-4xl text-3xl font-bold text-themeColor">Alpha AI</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"tel:234000090909"}>(+234) 000-090-0909</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"#"}>Rivers State, Port Harcourt</Link>
                 </div>
                 <div className="grid gap-3 min-w-fit flex-1">
-                    <Link href={"#"}>Alpha AI</Link>
-                    <Link href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
-                    <Link href={"tel:234000090909"}>(+234) 000-090-0909</Link>
-                    <Link href={"#"}>Rivers State, Port Harcourt</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"tel:234000090909"}>(+234) 000-090-0909</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"#"}>Rivers State, Port Harcourt</Link>
                 </div>
                 <div className="grid gap-3 min-w-fit flex-1">
-                    <Link href={"#"}>Alpha AI</Link>
-                    <Link href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
-                    <Link href={"tel:234000090909"}>(+234) 000-090-0909</Link>
-                    <Link href={"#"}>Rivers State, Port Harcourt</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"tel:234000090909"}>(+234) 000-090-0909</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"#"}>Rivers State, Port Harcourt</Link>
                 </div>
                 <div className="grid gap-3 min-w-fit flex-1">
-                    <Link href={"#"}>Alpha AI</Link>
-                    <Link href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
-                    <Link href={"tel:234000090909"}>(+234) 000-090-0909</Link>
-                    <Link href={"#"}>Rivers State, Port Harcourt</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"mailt0:info@alphaai.com"}>info@alphaai.com</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"tel:234000090909"}>(+234) 000-090-0909</Link>
+                    <Link className="hover:text-themeColor active:text-themeColorDark" href={"#"}>Rivers State, Port Harcourt</Link>
                 </div>
             </section>
 

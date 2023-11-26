@@ -24,7 +24,7 @@ export default function Carousel() {
         <Splide
             options={options}
             aria-labelledby="autoplay-example-heading"
-            className='splide overflow-x-auto my-16'
+            className='splide overflow-hidden my-16 w-full'
             hasTrack={true}
         >
             <SplideSlide>

@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-
+import { useMediaQuery } from 'react-responsive';
 import { Splide, SplideSlide} from '@splidejs/react-splide';
 import ProductCard from './ProductCard';
 
@@ -11,8 +11,8 @@ export const ItemsRow = () => {
         type: 'loop',
         focus: 3,
         gap: '1rem',
-        interval: 1000,
-        perPage: 2.5,
+        interval: 3000,
+        perPage: 1.5,
         omitEnd: false,
         rewind: true,
         autoplay: true,
@@ -20,29 +20,21 @@ export const ItemsRow = () => {
         resetProgress: false,
         height: 'fit-content',
     });
-    const [isMobileView, setIsMobileView] = useState(false);
+
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1020px)' });
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 950px)' });
 
 
     useEffect(() => {
-        const handleResize = () => {
-            const isMobile = window.innerWidth < 768;
-            setIsMobileView(isMobile);
-          };
-        
-          window.addEventListener('resize', handleResize);
-        
-          return () => {
-            window.removeEventListener('resize', handleResize);
-          };
-    }, []);
-
-    useEffect(() => {
-        if (isMobileView) {
-        setOptions((preOption)=>({perPage: 1, focus: "center"}))
-        }else{
-            setOptions((preOption)=>({perPage: 2.5, focus: 3, gap: ""}))
+        if (isTabletOrMobile) {
+            setOptions(() => ({ perPage: 1, focus: "center", gap: "3rem" }));
+            return;
         }
-    }, [isMobileView]);
+        if(isBigScreen){
+            setOptions(()=>({perPage: 2.5, focus: 3, gap: ""}));
+            return;
+        }
+    }, []);
 
     return (
         <Splide

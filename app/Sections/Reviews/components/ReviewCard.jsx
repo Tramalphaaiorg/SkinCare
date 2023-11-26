@@ -5,7 +5,7 @@ export default function ReviewCard({val}) {
     return (
         <div className="sm:w-[23rem] max-w-[20rem] w-[20rem] md:ml-40 bg-white rounded-2xl h-[28rem] p-9 flex flex-col dark:border-none border border-themeColor/20 text-black relative overflow-hidden">
             <span className="absolute -right-5 -top-16 text-[15rem] font-black opacity-5">
-                02
+                {val}
             </span>
             <section className="flex items-center gap-3 py-5 border-b pt-0">
                 <div className="w-[4rem] h-[4rem] rounded-full overflow-hidden">

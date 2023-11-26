@@ -14,8 +14,8 @@ export default function page() {
     return (
         <main className="w-screen h-screen dark:text-white font-medium relative">
             <TopSection />
-            {/* <Banner /> */}
             <InfoSection />
+            <Banner />
             <TrustedCompanies />
             <ReviewsSections />
             <InfoSection02 />
