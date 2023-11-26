@@ -4,6 +4,7 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 import { Splide, SplideSlide} from '@splidejs/react-splide';
 import ReviewCard from './ReviewCard';
+import { useMediaQuery } from 'react-responsive';
 
 
 export const Reviews = () => {
@@ -11,7 +12,6 @@ export const Reviews = () => {
         type: 'loop',
         gap: '',
         interval: 3000,
-        // drag: "free",
         perPage: 2,
         omitEnd: false,
         rewind: true,
@@ -20,29 +20,21 @@ export const Reviews = () => {
         resetProgress: false,
         height: 'fit-content',
     });
-    const [isMobileView, setIsMobileView] = useState(false);
 
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1020px)' });
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 950px)'});
 
     useEffect(() => {
-        const handleResize = () => {
-            const isMobile = window.innerWidth < 768;
-            setIsMobileView(isMobile);
-          };
-        
-          window.addEventListener('resize', handleResize);
-        
-          return () => {
-            window.removeEventListener('resize', handleResize);
-          };
+        if (isTabletOrMobile) {
+            setOptions(() => ({ perPage: 1, focus: "center", gap: "3rem" }));
+            return;
+        }
+        if(isBigScreen){
+            setOptions(()=>({perPage: 2.5, focus: 3, gap: ""}));
+            return;
+        }
     }, []);
 
-    useEffect(() => {
-        if (isMobileView) {
-        setOptions((preOption)=>({perPage: 1, focus: "center", gap: "2rem"}))
-        }else{
-            setOptions((preOption)=>({perPage: 2, focus: 0, gap: ""}))
-        }
-    }, [isMobileView]);
 
     return (
         <Splide

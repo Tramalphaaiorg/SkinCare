@@ -33,6 +33,7 @@ body {
 
 * {
   transition: all .15s ease-in-out;
+  /* outline: 1px solid red; */
 }
 
 * ::-webkit-scrollbar{

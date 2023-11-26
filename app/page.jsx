@@ -1,6 +1,6 @@
 import { PopUp } from "./PopUp Screen/PopUp";
 import Footer from "./Sections/Footer/Footer";
-import Banner from "./Sections/ImageBanner/Banner";
+// import Banner from "./Sections/ImageBanner/Banner";
 import InfoSection from "./Sections/Info Section/InfoSection";
 import ReviewsSections from "./Sections/Reviews/ReviewsSections";
 import TopSection from "./Sections/Top Section/TopSection";
@@ -23,7 +23,7 @@ export default function page() {
             <TopSeller />
             <Carousel />
             <Footer />
-            <PopUp />
+            {/* <PopUp /> */}
         </main>
     );
 }                           
